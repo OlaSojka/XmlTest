@@ -1,0 +1,4 @@
+c:\users\ola\documents\visual studio 2010\Projects\XmlTest\XmlTest\bin\Debug\XmlTest.exe
+c:\users\ola\documents\visual studio 2010\Projects\XmlTest\XmlTest\bin\Debug\XmlTest.pdb
+c:\users\ola\documents\visual studio 2010\Projects\XmlTest\XmlTest\obj\x86\Debug\XmlTest.exe
+c:\users\ola\documents\visual studio 2010\Projects\XmlTest\XmlTest\obj\x86\Debug\XmlTest.pdb
