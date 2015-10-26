@@ -9,6 +9,12 @@ namespace XmlTest
 {
     class Program
     {
+        static void test(Question q, int id)
+        {
+
+        }
+
+
         static void Main(string[] args)
         {
             ExpertSystem expert = null;
