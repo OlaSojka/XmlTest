@@ -9,15 +9,31 @@ namespace XmlTest
 {
     class Program
     {
+        static ExpertSystem expert;
+
         static void test(Question q, int id)
         {
+            Question q1 = expert.questions.Find(delegate(Question q2)
+            {
+                return q2.Id == id;
+            }
+            );
 
+            if (!q.isConclusion)
+            {
+                Console.WriteLine(q1.no);
+                test(q1, q1.no);
+                Console.WriteLine(q1.yes);
+                test(q1, q1.yes);
+
+            }
+            else
+                Console.WriteLine(q.content);
         }
 
 
         static void Main(string[] args)
         {
-            ExpertSystem expert = null;
             string path = "FebrileSeizures.xml";
 
             XmlSerializer serializer = new XmlSerializer(typeof(ExpertSystem), "http://tempuri.org/XMLSchema.xsd");
@@ -44,16 +60,22 @@ namespace XmlTest
             */
             int id = 0;
             Question q = null;
-            while (true)
-            {
+           // while (true)
+           // {
                 q = expert.questions.Find(delegate(Question q1)
                 {
                     return q1.Id == id;
                 }
                 );
-                Console.WriteLine("content: {0}", q.content);
+                
+                Console.WriteLine(q.yes);
+                test(q, q.yes);
+                Console.WriteLine(q.no);
+                test(q, q.no);
+                
+              //  Console.WriteLine("content: {0}", q.content);
 
-                if (!q.isConclusion)
+          /*      if (!q.isConclusion)
                 {
                     Console.WriteLine("Press y for 'yes' or n for 'no'");
                     ConsoleKeyInfo cki = Console.ReadKey();
@@ -68,9 +90,9 @@ namespace XmlTest
                     }
                 }
                 else
-                    break;
-                Console.WriteLine(id);
-            }
+                    break;*/
+              //  Console.WriteLine(id);
+           // }
             Console.ReadKey();
         }
     }
