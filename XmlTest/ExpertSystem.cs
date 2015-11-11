@@ -22,15 +22,6 @@ namespace XmlTest
 
         [System.Xml.Serialization.XmlElement("content")]
         public string content;
-
-        public Question(int id, bool isConclusion, int yes, int no, string content)
-        {
-            Id = id;
-            this.isConclusion = isConclusion;
-            this.yes = yes;
-            this.no = no;
-            this.content = content;
-        }
     }
 
     public class Source
@@ -58,14 +49,5 @@ namespace XmlTest
         [XmlArray("sources")]
         [XmlArrayItem("source", typeof(Source))]
         public List<Source> sources;
-
-
-        public ExpertSystem()
-        {
-            this.title = "";
-            this.description = "";
-            this.questions = new List<Question>();
-            this.sources = new List<Source>();
-        }
     }
 }
