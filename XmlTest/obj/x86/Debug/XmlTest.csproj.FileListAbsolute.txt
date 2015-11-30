@@ -3,3 +3,8 @@ c:\users\ola\documents\visual studio 2010\Projects\XmlTest\XmlTest\bin\Debug\Xml
 c:\users\ola\documents\visual studio 2010\Projects\XmlTest\XmlTest\obj\x86\Debug\XmlTest.exe
 c:\users\ola\documents\visual studio 2010\Projects\XmlTest\XmlTest\obj\x86\Debug\XmlTest.pdb
 C:\Users\Ola\documents\visual studio 2010\Projects\XmlTest\XmlTest\obj\x86\Debug\XmlTest.csprojResolveAssemblyReference.cache
+C:\Users\Ola\Documents\GitHub\XmlTest\XmlTest\obj\x86\Debug\XmlTest.exe
+C:\Users\Ola\Documents\GitHub\XmlTest\XmlTest\obj\x86\Debug\XmlTest.pdb
+C:\Users\Ola\Documents\GitHub\XmlTest\XmlTest\bin\Debug\XmlTest.exe
+C:\Users\Ola\Documents\GitHub\XmlTest\XmlTest\bin\Debug\XmlTest.pdb
+C:\Users\Ola\Documents\GitHub\XmlTest\XmlTest\obj\x86\Debug\XmlTest.csprojResolveAssemblyReference.cache
